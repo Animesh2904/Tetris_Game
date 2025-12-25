@@ -1,0 +1,208 @@
+body{
+    background-image: url("tatris_img/background_img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    gap: 70px;
+}
+.main_divs{
+    flex: 1;
+}
+#states_1{
+    flex: 0 1 30%;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;
+}
+.game_name{
+    color: yellow;
+    background-color: black;
+    border: 5px solid yellow;
+    text-align: center;
+    flex: 1;
+    font-size: clamp(20px, 5vw, 50px);
+    margin-bottom: 30px;
+}
+#statistics{
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid yellow;
+    min-height: 0;
+    overflow: auto;
+}
+#state_title{
+    flex: 1;
+    background-color: black;
+    color: yellow;
+    font-size: clamp(10px, 4vw, 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#t_shape, #l_shape, #z_shape, #s_shape, #o_shape, #i_shape{
+    flex: 1;
+    display: flex;
+    background-color: black;
+    padding: 10px;
+}
+#t_blocks, #l_blocks, #z_blocks, #s_blocks, #o_blocks, #i_blocks{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+#t_row1, #t_row2, #l_row1, #l_row2, #z_row1, #z_row2, #s_row1, #s_row2, #o_row1, #o_row2, #i_row1, #i_row2{
+    background-color: black;
+    display: flex;
+    flex: 1;
+}
+#t_11, #t_12, #t_13, #t_22, #l_13, #l_21, #l_22, #l_23, #z_11, #z_12, #z_22, #z_23, #s_12, #s_13, #s_21, #s_22, #o_11, #o_12, #o_21, #o_22, #i_21, #i_22, #i_23, #i_24{
+    background-color: yellow;
+    border: 1px solid black;
+    flex: 1;
+}
+#t_14, #t_21, #t_23, #t_24, #l_11, #l_12, #l_14, #l_24, #z_13, #z_14, #z_21, #z_24, #s_11, #s_14, #s_23, #s_24, #o_13, #o_14, #o_23, #o_24, #i_11, #i_12, #i_13, #i_14{
+    background-color: black;
+    border: 1px solid black;
+    flex: 1;
+}
+#t_score, #l_score, #z_score, #s_score, #o_score, #i_score{
+    flex: 2.3;
+    background-color: black;
+    color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: clamp(20px, 3vw, 50px);
+}
+
+
+#play_area{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#level{
+    width: 255px;
+    margin-left: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    color:yellow;
+    background-color: black;
+    border: 5px solid yellow;
+    text-align: center;
+    
+}
+#board {
+    width: 255px;             
+    height: 550px;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    gap:1px;
+    background-color: yellow;
+    border: 5px solid yellow;
+}
+.cell, .next_cell {
+    background-color: #222;
+}
+.active, .taken {
+    background-color: yellow;
+    border: 1.5px solid black;
+}
+#controller{
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-left: 40px;
+    background-color: black;
+    height: 60px;
+    border: 5px solid yellow;
+    border-top: 0px solid yellow;
+}
+.con_pan{
+    display: flex;
+}
+#left_btn{
+    background-image: url("tatris_img/left_arrow.png");
+}
+#rotate_btn{
+    background-image: url("tatris_img/rotate_arrow.png");
+}
+#right_btn{
+    background-image: url("tatris_img/right_arrow.png");
+}
+#down_btn{
+    background-image: url("tatris_img/down_arrow.png");
+}
+#left_btn, #right_btn, #rotate_btn, #down_btn {
+    width: 60px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 5px;
+}
+#states_2{
+    flex: 1.5;
+    margin-right: 20px;
+}
+#score{
+    width: 250px;
+    font-size: 30px;
+    background-color: black;
+    color: yellow;
+    border: 5px solid yellow;
+}
+.title_next{
+    width: 150px;
+    background-color: black;
+    color: yellow;
+    font-size: 30px;
+    border: 5px solid yellow;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+#next_shape{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr); 
+    gap:1px;
+    background-color: yellow;
+    border: 5px solid yellow;
+    margin-left: 50px;
+}
+#start_btn{
+    width: 250px;
+    font-size: 40px;
+    font-family: inherit;
+    color: yellow;
+    text-align: center;
+    border: 5px solid yellow;
+    background-color: black;
+    margin-left: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+}

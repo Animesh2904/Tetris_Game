@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TATRIS GAME</title>
+    <link rel="stylesheet" href="CSS_part.css">
+</head>
+<body>
+    <div class="main_divs" id="states_1">
+        <div class="game_name">T  A  T  R  I  S</div>
+        <div id="statistics">
+            <div id="state_title">STATISTICS</div>
+            <div id="t_shape">
+                <div id="t_blocks">
+                    <div id="t_row1">
+                        <div id="t_11"></div>
+                        <div id="t_12"></div>
+                        <div id="t_13"></div>
+                        <div id="t_14"></div>
+                    </div>
+                    <div id="t_row2">
+                        <div id="t_21"></div>
+                        <div id="t_22"></div>
+                        <div id="t_23"></div>
+                        <div id="t_24"></div>
+                    </div>
+                </div>
+                <div id="t_score">000</div>
+            </div>
+            <div id="l_shape">
+                <div id="l_blocks">
+                    <div id="l_row1">
+                        <div id="l_11"></div>
+                        <div id="l_12"></div>
+                        <div id="l_13"></div>
+                        <div id="l_14"></div>
+                    </div>
+                    <div id="l_row2">
+                        <div id="l_21"></div>
+                        <div id="l_22"></div>
+                        <div id="l_23"></div>
+                        <div id="l_24"></div>
+                    </div>
+                </div>
+                <div id="l_score">000</div>
+            </div>
+            <div id="z_shape">
+                <div id="z_blocks">
+                    <div id="z_row1">
+                        <div id="z_11"></div>
+                        <div id="z_12"></div>
+                        <div id="z_13"></div>
+                        <div id="z_14"></div>
+                    </div>
+                    <div id="z_row2">
+                        <div id="z_21"></div>
+                        <div id="z_22"></div>
+                        <div id="z_23"></div>
+                        <div id="z_24"></div>
+                    </div>
+                </div>
+                <div id="z_score">000</div>
+            </div>
+            <div id="s_shape">
+                <div id="s_blocks">
+                    <div id="s_row1">
+                        <div id="s_11"></div>
+                        <div id="s_12"></div>
+                        <div id="s_13"></div>
+                        <div id="s_14"></div>
+                    </div>
+                    <div id="s_row2">
+                        <div id="s_21"></div>
+                        <div id="s_22"></div>
+                        <div id="s_23"></div>
+                        <div id="s_24"></div>
+                    </div>
+                </div>
+                <div id="s_score">000</div>
+            </div>
+            <div id="o_shape">
+                <div id="o_blocks">
+                    <div id="o_row1">
+                        <div id="o_11"></div>
+                        <div id="o_12"></div>
+                        <div id="o_13"></div>
+                        <div id="o_14"></div>
+                    </div>
+                    <div id="o_row2">
+                        <div id="o_21"></div>
+                        <div id="o_22"></div>
+                        <div id="o_23"></div>
+                        <div id="o_24"></div>
+                    </div>
+                </div>
+                <div id="o_score">000</div>
+            </div>
+            <div id="i_shape">
+                <div id="i_blocks">
+                    <div id="i_row1">
+                        <div id="i_11"></div>
+                        <div id="i_12"></div>
+                        <div id="i_13"></div>
+                        <div id="i_14"></div>
+                    </div>
+                    <div id="i_row2">
+                        <div id="i_21"></div>
+                        <div id="i_22"></div>
+                        <div id="i_23"></div>
+                        <div id="i_24"></div>
+                    </div>
+                </div>
+                <div id="i_score">000</div>
+            </div>
+        </div>
+    </div>
+    <div class="main_divs" id="play_area">
+        <div id="level">
+            LEVEL   : <span id="level_count">    01</span>
+        </div>
+        <div id="board"></div>
+        <div id="controller">
+            <div class="con_pan" id="con_upper_part">
+                <div id="left_btn"></div>
+                <div id="rotate_btn"></div>
+                <div id="right_btn"></div>
+            </div>
+            <div class="con_pan" id="con_lower_part">
+                <div></div>
+                <div id="down_btn"></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="main_divs" id="states_2">
+        <div id="score">
+            <div id="top">
+                TOP SCORE <br>
+                <span id="top_score">00000</span>
+            </div>
+            <div id="current">
+                CURRENT SCORE <br>
+                <span id="current_score">00000</span>
+            </div>
+            <div id="lines">
+                LINE CLEAR <br>
+                <span id="line_count">00000</span>
+            </div>
+        </div>
+        <div id="next_sp_box">
+            <div class="title_next">NEXT</div>
+            <div id="next_shape"></div>
+        </div>
+        <button id="start_btn">
+            START
+        </button>
+    </div>
+    <script src="tatris_js.js"></script>
+
+</body>
+</html>
