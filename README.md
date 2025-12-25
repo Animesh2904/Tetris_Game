@@ -1,6 +1,6 @@
 # 🎮 TETRIS GAME (Tetris Clone)
 
-A fully functional **Tetris (TATRIS) game** built using **HTML, CSS, and Vanilla JavaScript**.  
+A fully functional **Tetris (TETRIS) game** built using **HTML, CSS, and Vanilla JavaScript**.  
 This project focuses on game logic, DOM manipulation, keyboard & button controls, scoring, levels, and responsive UI design.
 
 ---
