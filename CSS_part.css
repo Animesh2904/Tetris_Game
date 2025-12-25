@@ -1,5 +1,5 @@
 body{
-    background-image: url("tatris_img/background_img.png");
+    background-image: url("tetris_img/background_img.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -139,16 +139,16 @@ body{
     display: flex;
 }
 #left_btn{
-    background-image: url("tatris_img/left_arrow.png");
+    background-image: url("tetris_img/left_arrow.png");
 }
 #rotate_btn{
-    background-image: url("tatris_img/rotate_arrow.png");
+    background-image: url("tetris_img/rotate_arrow.png");
 }
 #right_btn{
-    background-image: url("tatris_img/right_arrow.png");
+    background-image: url("tetris_img/right_arrow.png");
 }
 #down_btn{
-    background-image: url("tatris_img/down_arrow.png");
+    background-image: url("tetris_img/down_arrow.png");
 }
 #left_btn, #right_btn, #rotate_btn, #down_btn {
     width: 60px;
